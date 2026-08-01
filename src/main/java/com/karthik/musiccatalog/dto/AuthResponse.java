@@ -13,4 +13,6 @@ public class AuthResponse {
 
     private String message;
 
+    private String name;
+
 }

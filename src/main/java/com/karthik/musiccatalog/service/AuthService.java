@@ -61,6 +61,7 @@ public class AuthService {
         return AuthResponse.builder()
                 .token(token)
                 .message("Login Successful")
+                .name(user.getName())
                 .build();
     }
 
