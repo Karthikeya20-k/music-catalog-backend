@@ -1,0 +1,40 @@
+GET http://localhost:8080/api/search?query=coldplay
+
+###
+
+GET http://localhost:8080/songs
+
+###
+GET http://localhost:8080/analytics
+
+###
+
+POST http://localhost:8080/songs
+Content-Type: application/json
+
+{
+  "trackId": 1122782283,
+  "trackName": "Yellow",
+  "artistName": "Coldplay",
+  "collectionName": "Parachutes",
+  "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f5/93/8c/f5938c49-964c-31d1-4b33-78b634f71fb7/190295978075.jpg/100x100bb.jpg",
+  "primaryGenreName": "Alternative"
+}
+
+POST http://localhost:8080/auth/login
+Content-Type: application/json
+
+{
+  "email": "karthik@gmail.com",
+  "password": "123456"
+}
+
+### Login
+
+POST http://localhost:8080/auth/login
+Content-Type: application/json
+
+{
+    "email":"karthik@gmail.com",
+    "password":"12345"
+}
